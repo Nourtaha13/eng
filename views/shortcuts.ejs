@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- bootstrap css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/shortcuts.css">
+
+  <title>AutoCAD Shortcuts</title>
+</head>
+
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar navbar-light bg-light fixed-top" id="nav">
+    <div class="container-fluid">
+
+      <!-- navbar-logo -->
+      <a class="navbar-brand" href="#">AutoCAD Shortcuts</a>
+
+      <!-- hamberger button -->
+      <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="box-shadow: none !important;">
+
+        <!-- hamberger icon -->
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- list menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <!-- header side menu -->
+        <div class="offcanvas-header">
+
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: yellow !important; font-weight: bold;">
+            Menu</h5>
+
+          <!-- close button -->
+          <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+
+        </div>
+
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/shortcuts">Shortcuts</a>
+      </div>
+  </nav>
+  <!-- navbar end -->
+
+  <div class="header">
+  </div>
+
+
+  <div class="container-fluid">
+    <input type="text" name="" id="search" placeholder="Search">
+    <table class="table"
+      style="background: rgba(0, 0, 0, 0.7) !important; color: yellow !important; backdrop-filter: blur(8px); border: 1.5px solid transparent; border-radius: 15px !important; overflow: hidden;">
+      <thead style="border-bottom: yellow">
+        <tr class="top">
+          <th scope="col">Shortcuts</th>
+          <th scope="col">Code Name</th>
+          <th scope="col">Usage</th>
+        </tr>
+      </thead>
+      <tbody class="short" style="border-bottom: yellow">
+      </tbody>
+    </table>
+  </div>
+
+  <!--=============== BOOTSTRAP JS ===============-->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/shortcuts.js"></script>
+</body>
+
+</html>

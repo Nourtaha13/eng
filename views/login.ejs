@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div>
+        <form method="post" action="/admin" id="regester">
+            <p class="alert" style="display: none;"><%= locals.msg%></p>
+            <label id="label">LOG IN</label>
+            <input type="text" class="inputs" name="user" placeholder="Name" required="required">
+            <input type="password" class="inputs" name="pass" id="last" placeholder="Password" required="required">
+            <button id="btn">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
