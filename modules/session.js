@@ -8,7 +8,7 @@ const name = process.env.dbName
 
 
 const store = new MongoDBStore({
-	uri: `mongodb://${host}:${port}/${name}`,
+	uri: `mongodb+srv://yaman:123@cluster0.uowdi.mongodb.net/eng?retryWrites=true&w=majority`,
 	collection: 'sessions'
 });
 
