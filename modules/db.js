@@ -6,7 +6,7 @@ const port = process.env.dbPort
 const name = process.env.dbName
 
 
-const client = new MongoClient(`mongodb://${host}:${port}`)
+const client = new MongoClient(`mongodb+srv://yaman:123@cluster0.uowdi.mongodb.net/eng?retryWrites=true&w=majority`)
 
 async function main(callback){
 	client.connect()
